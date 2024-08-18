@@ -2,13 +2,8 @@ import React from 'react';
 import { IoMdSync } from "react-icons/io";
 import { VscKebabVertical } from "react-icons/vsc";
 import { GoClockFill } from "react-icons/go";
-import { useState } from 'react';
-import Addwidget from '../components/Addwidget';
 
 const Tools = () => {
-
-  
-
 
   return (
     <div className='ml-6'>
@@ -22,7 +17,7 @@ const Tools = () => {
           <IoMdSync size={32} className='border-2 border-gray-300 p-1 rounded-md' />
           <VscKebabVertical size={32} className='border-2 border-gray-300 p-1.5 rounded-md' />
 
-          {/* Clock Icon */}
+
           <div className="flex items-center border-2 border-gray-300 p-1 rounded-md">
             <GoClockFill size={20} className="mr-1 ml-1" />
             <select className="border-none outline-none bg-transparent cursor-pointer">

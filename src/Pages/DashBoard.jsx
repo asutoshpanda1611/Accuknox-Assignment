@@ -4,14 +4,13 @@ import Tools from '../Header/Tools'
 import Cards from '../components/Cards'
 
 
-
 function DashBoard() {
 
 
   return (
     <div > 
       <div>
-        <Searchbar></Searchbar>
+        <Searchbar ></Searchbar>
         <Tools></Tools>
         <div className='mb-6'>
           <Cards></Cards>

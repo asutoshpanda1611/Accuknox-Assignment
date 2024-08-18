@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdNotificationsActive } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 
-const Searchbar = () => {
+const Searchbar = ({ data = [] }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredData = data.filter((item) => {
+    return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   const navigate = useNavigate();
+
   function Clickhandler() {
     navigate('/');
   }
@@ -26,8 +32,15 @@ const Searchbar = () => {
             <input 
               type="text" 
               placeholder="Search anything..." 
+              value={searchTerm} 
+              onChange={(e) => setSearchTerm(e.target.value)} 
               className="border-2 pl-8 pr-4 py-2 w-72 h-10 rounded-none" 
             />
+            <ul>
+              {filteredData.map((item) => (
+                <li key={item.id}>{item.name}</li>
+              ))}
+            </ul>
           </div>
 
           <MdNotificationsActive size={29} className="text-black " />
@@ -56,7 +69,7 @@ const Searchbar = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Searchbar;
