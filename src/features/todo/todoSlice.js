@@ -1,7 +1,7 @@
 import { createSlice, nanoid} from "@reduxjs/toolkit";
 
 const initialState = {
-    todos:[{id: null, text: ""}]
+    todos:[]
 }
 
 export const todoSlice = createSlice({
