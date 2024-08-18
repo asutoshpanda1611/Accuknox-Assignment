@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "name": "CSPM Executive Dashboard",
+    "widgets": [
+      { "id": "101", "name": "Cloud Accounts", "description": "Displays all cloud accounts with their status.", "type": "chart" },
+      { "id": "102", "name": "Cloud Account Risk Management", "description": "Manages and displays risks associated with cloud accounts.", "type": "chart" },
+      { "id": "103", "name": "Workload Alerts", "description": "Displays alerts related to workload performance.", "type": "addwidget" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "CWPP Dashboard",
+    "widgets": [
+      { "id": "201", "name": "Top 5 Namespace Specific Alerts", "description": "Displays all cloud accounts with their status.", "type": "chart" },
+      { "id": "202", "name": "Workload Alerts", "description": "Displays alerts related to workload performance.", "type": "addwidget" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Network Monitoring",
+    "widgets": [
+      { "id": "301", "name": "Network Traffic Overview", "description": "Provides an overview of network traffic and usage.", "type": "graph" },
+      { "id": "302", "name": "Top Network Anomalies", "description": "Highlights the most significant network anomalies detected.", "type": "addwidget" }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "User Activity",
+    "widgets": [
+      { "id": "401", "name": "Active Users", "description": "Tracks the number of active users in the system.", "type": "nograph" },
+      { "id": "402", "name": "User Login Trends", "description": "Shows trends in user login activities over time.", "type": "nograph" }
+    ]
+  }
+]
