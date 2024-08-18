@@ -14,7 +14,7 @@ Here are steps to manually run the project.
 
 
 <h1>Installing the dependencies</h1>
-1) you can install by : npm i @reduxjs/toolkit chart.js react-chartjs-2 react-icons react-redux react-router-dom uuid
+1. you can install by : npm i @reduxjs/toolkit chart.js react-chartjs-2 react-icons react-redux react-router-dom uuid
 
 
 <h1>Configuring Tailwind and daisy ui </h1>
@@ -27,7 +27,7 @@ Here are steps to manually run the project.
   ],
 
 
-3)Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+3) Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
